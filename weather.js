@@ -16,6 +16,7 @@ async function fetchWeatherCurrent (city) {
 
         console.log(responseData);
         updateDisplay(responseData);
+        document.getElementById('errorMessage').textContent = '';
     } catch(err) {
         document.getElementById('errorMessage').textContent = 'City not found.';
     }
