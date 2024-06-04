@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    font-family: Roboto, Arial, Arial, Helvetica, sans-serif;
+    background-color: #A7E6FF;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.location-weather-container {
+    background-color: #3ABEF9;
+    border-radius: 10px;
+}
+
+.location-weather-container > div {
+    padding: 15px;
+}
+
+div.header {
+    display: grid;
+    grid-template-columns: 250px 250px;
+    justify-content: space-between;
+    align-items: start;
+}
+
+div.header h3,
+div.header p {
+    margin: 5px;
+}
+
+div.header form {
+    margin-top: 5px;
+}
+
+div.header form input {
+    padding: 2px;
+    border: 0;
+    border-radius: 2px;
+}
+
+#errorMessage {
+    color: #FF0000;
+}
+
+div.weather-main-data {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+
+div.weather-main-data > div > p {
+    margin: 5px;
+}
+
+div.weather-main-data > div > p:first-child {
+    font-weight: bold;
+}
+
+div.weather-misc-data {
+    display: grid;
+    grid-template-columns: repeat(5, 150px);
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.weather-misc-data > div > p {
+    margin: 5px;
+}
+
+div.weather-misc-data > div > p:first-child {
+    font-weight: bold;
+}

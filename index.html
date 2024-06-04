@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="weather.js" defer></script>
+</head>
+<body>
+    <div class="location-weather-container">
+        <div class="header">
+            <div id="location_datetime">
+                <h3 id="location">
+                    <span id="city"></span>, <span id="country"></span>
+                </h3>
+                <p id="datetime"></p>
+            </div>
+            <div>
+                <form action="" method="post" id="search_form">
+                    <input type="text" name="city" placeholder="Enter city... ">
+                    <input type="submit" value="Search">
+                </form>
+                <p><span id="errorMessage"></span></p>
+            </div>
+        </div>
+        <div class="weather-main-data">
+            <div>
+                <img src="#" alt="">
+            </div>
+            <div>
+                <h1><span id="temperature"></span>&deg;C</h1>
+            </div>
+            <div>
+                <p><span id="condition"></span></p>
+                <p>Feels like <span id="feelslike"></span>&deg;C</p>
+            </div>
+        </div>
+        <div class="weather-misc-data">
+            <div>
+                <p>Wind</p>
+                <p id="wind"></p>
+            </div>
+            <div>
+                <p>Humidity</p>
+                <p id="humidity"></p>
+            </div>
+            <div>
+                <p>Visibility</p>
+                <p id="visibility"></p>
+            </div>
+            <div>
+                <p>Pressure</p>
+                <p id="pressure"></p>
+            </div>
+            <div>
+                <p>Dew point</p>
+                <p id="dewpoint"></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
